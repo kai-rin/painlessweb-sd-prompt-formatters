@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Tool</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="tabs">
+        <button class="tab-button" data-tool="tool1">Tool 1</button>
+        <button class="tab-button" data-tool="tool2">Tool 2</button>
+        <button class="tab-button" data-tool="tool3">Tool 3</button>
+        <button class="tab-button" data-tool="tool4">Tool 4</button>
+    </div>
+
+    <div id="tool1" class="tool">
+        <h2>Tool 1: Convert Newlines to Commas</h2>
+        <textarea id="tool1-input" rows="4" cols="50">masterpiece\nbest quality\n1girl\naqua eyes\nbaseball cap\nblonde hair\nclosed mouth\nearrings\ngreen background\nhat\nhoop earrings\njewelry\nlooking at viewer\nshirt\nshort hair\nsimple background\nsolo\nupper body\nyellow shirt</textarea>
+        <button id="tool1-button">Convert</button>
+        <textarea id="tool1-output" rows="4" cols="50" readonly></textarea>
+        <button class="copy-button" data-output="tool1-output">Copy to Clipboard</button>
+    </div>
+
+    <div id="tool2" class="tool" style="display: none;">
+        <h2>Tool 2: Convert Commas to Newlines</h2>
+        <textarea id="tool2-input" rows="4" cols="50">masterpiece, best quality, 1girl, aqua eyes, baseball cap, blonde hair, closed mouth, earrings, green background, hat, hoop earrings, jewelry, looking at viewer, shirt, short hair, simple background, solo, upper body, yellow shirt</textarea>
+        <button id="tool2-button">Convert</button>
+        <textarea id="tool2-output" rows="4" cols="50" readonly></textarea>
+        <button class="copy-button" data-output="tool2-output">Copy to Clipboard</button>
+    </div>
+
+    <div id="tool3" class="tool" style="display: none;">
+        <h2>Tool 3: Convert Newlines to Curly Brackets and Pipes</h2>
+        <textarea id="tool3-input" rows="4" cols="50">A cherry blossom tree at the school entrance\nA quiet classroom\nA rooftop at sunset</textarea>
+        <button id="tool3-button">Convert</button>
+        <textarea id="tool3-output" rows="4" cols="50" readonly></textarea>
+        <button class="copy-button" data-output="tool3-output">Copy to Clipboard</button>
+    </div>
+
+    <div id="tool4" class="tool" style="display: none;">
+        <h2>Tool 4: Remove Parentheses and Inside Numbers</h2>
+        <textarea id="tool4-input" rows="4" cols="50">masterpiece, best quality, 1girl, (aqua eyes), (baseball cap:1.2), ((blonde hair)), closed mouth, earrings, green background, hat, hoop earrings, jewelry, looking at viewer, shirt, short hair, simple background, solo, (upper body, yellow shirt)</textarea>
+        <button id="tool4-button">Convert</button>
+        <textarea id="tool4-output" rows="4" cols="50" readonly></textarea>
+        <button class="copy-button" data-output="tool4-output">Copy to Clipboard</button>
+    </div>    
+
+    <script src="js/tool1.js"></script>
+    <script src="js/tool2.js"></script>
+    <script src="js/tool3.js"></script>
+    <script src="js/tool4.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/clipboard.js"></script>
+    </div>
+</body>
+</html>
