@@ -34,8 +34,8 @@ document.getElementById("NL2commas-clear").addEventListener("click", function(){
     document.getElementById("NL2commas-input").value = '';
 });
 
-document.getElementById("commas2newlines-clear").addEventListener("click", function(){
-    document.getElementById("commas2newlines-input").value = '';
+document.getElementById("commas2NL-clear").addEventListener("click", function(){
+    document.getElementById("commas2NL-input").value = '';
 });
 
 document.getElementById("NL2DyPrompt-clear").addEventListener("click", function(){
