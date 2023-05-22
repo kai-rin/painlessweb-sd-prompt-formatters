@@ -1,5 +1,5 @@
-document.getElementById("tool4-button").addEventListener("click", function() {
-    const inputText = document.getElementById("tool4-input").value;
+document.getElementById("CleanParenthesis-button").addEventListener("click", function() {
+    const inputText = document.getElementById("CleanParenthesis-input").value;
 
     // Temporarily replace the <> sections to not be affected by the following replaces
     const placeholders = [];
@@ -18,5 +18,5 @@ document.getElementById("tool4-button").addEventListener("click", function() {
         outputText = outputText.replace(new RegExp(`<${i}>`, 'g'), placeholder.replace(/[\(\):.\d]/g, ''));
     });
 
-    document.getElementById("tool4-output").value = outputText;
+    document.getElementById("CleanParenthesis-output").value = outputText;
 });
