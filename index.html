@@ -16,42 +16,58 @@
 
     <div id="newlines2commas" class="tool">
         <h2>Tool 1: Convert Newlines to Commas</h2>
-        <label for="newlines2commas-input">Input Text (Newlines):</label>
-        <textarea id="newlines2commas-input" rows="4" cols="50">masterpiece\nbest quality\n1girl\naqua eyes\nbaseball cap\nblonde hair\nclosed mouth\nearrings\ngreen background\nhat\nhoop earrings\njewelry\nlooking at viewer\nshirt\nshort hair\nsimple background\nsolo\nupper body\nyellow shirt</textarea>
-        <button id="newlines2commas-button">Convert</button>
-        <label for="newlines2commas-output">Output Text (Commas):</label>
-        <textarea id="newlines2commas-output" rows="4" cols="50"></textarea>
-        <button class="copy-button" data-output="newlines2commas-output">Copy to Clipboard</button>
+        <div class="tool-input-group full-width">
+            <label for="newlines2commas-input">Input Text (Newlines):</label>
+            <textarea id="newlines2commas-input" rows="4" cols="50">masterpiece\nbest quality\n1girl\naqua eyes\nbaseball cap\nblonde hair\nclosed mouth\nearrings\ngreen background\nhat\nhoop earrings\njewelry\nlooking at viewer\nshirt\nshort hair\nsimple background\nsolo\nupper body\nyellow shirt</textarea>
+            <button id="newlines2commas-button">Convert</button>
+        </div>
+        <div class="tool-output-group full-width">
+            <label for="newlines2commas-output">Output Text (Commas):</label>
+            <textarea id="newlines2commas-output" rows="4" cols="50"></textarea>
+            <button class="copy-button" data-output="newlines2commas-output">Copy to Clipboard</button>
+        </div>
     </div>
 
     <div id="tool2" class="tool" style="display: none;">
         <h2>Tool 2: Convert Commas to Newlines</h2>
-        <label for="tool2-input">Input Text (Commas):</label>
-        <textarea id="tool2-input" rows="4" cols="50">masterpiece, best quality, 1girl, aqua eyes, baseball cap, blonde hair, closed mouth, earrings, green background, hat, hoop earrings, jewelry, looking at viewer, shirt, short hair, simple background, solo, upper body, yellow shirt</textarea>
-        <button id="tool2-button">Convert</button>
-        <label for="tool2-output">Output Text (Newlines):</label>
-        <textarea id="tool2-output" rows="4" cols="50"></textarea>
-        <button class="copy-button" data-output="tool2-output">Copy to Clipboard</button>
+        <div class="tool-input-group full-width">
+            <label for="tool2-input">Input Text (Commas):</label>
+            <textarea id="tool2-input" rows="4" cols="50">masterpiece, best quality, 1girl, aqua eyes, baseball cap, blonde hair, closed mouth, earrings, green background, hat, hoop earrings, jewelry, looking at viewer, shirt, short hair, simple background, solo, upper body, yellow shirt</textarea>
+            <button id="tool2-button">Convert</button>
+        </div>
+        <div class="tool-output-group full-width">
+            <label for="tool2-output">Output Text (Newlines):</label>
+            <textarea id="tool2-output" rows="4" cols="50"></textarea>
+            <button class="copy-button" data-output="tool2-output">Copy to Clipboard</button>
+        </div>
     </div>
 
     <div id="tool3" class="tool" style="display: none;">
         <h2>Tool 3: Convert Newlines to Curly Brackets and Pipes</h2>
-        <label for="tool3-input">Input Text (Newlines):</label>
-        <textarea id="tool3-input" rows="4" cols="50">masterpiece\nbest quality\n1girl\naqua eyes\nbaseball cap\nblonde hair\nclosed mouth\nearrings\ngreen background\nhat\nhoop earrings\njewelry\nlooking at viewer\nshirt\nshort hair\nsimple background\nsolo\nupper body\nyellow shirt</textarea>
-        <button id="tool3-button">Convert</button>
-        <label for="tool3-output">Output Text (Curly Brackets and Pipes):</label>
-        <textarea id="tool3-output" rows="4" cols="50"></textarea>
-        <button class="copy-button" data-output="tool3-output">Copy to Clipboard</button>
+        <div class="tool-input-group full-width">
+            <label for="tool3-input">Input Text (Newlines):</label>
+            <textarea id="tool3-input" rows="4" cols="50">masterpiece\nbest quality\n1girl\naqua eyes\nbaseball cap\nblonde hair\nclosed mouth\nearrings\ngreen background\nhat\nhoop earrings\njewelry\nlooking at viewer\nshirt\nshort hair\nsimple background\nsolo\nupper body\nyellow shirt</textarea>
+            <button id="tool3-button">Convert</button>
+        </div>
+        <div class="tool-output-group full-width">
+            <label for="tool3-output">Output Text (Curly Brackets and Pipes):</label>
+            <textarea id="tool3-output" rows="4" cols="50"></textarea>
+            <button class="copy-button" data-output="tool3-output">Copy to Clipboard</button>
+        </div>
     </div>
 
     <div id="tool4" class="tool" style="display: none;">
         <h2>Tool 4: Remove Parentheses and Inside Numbers</h2>
-        <label for="tool4-input">Input Text (With Parentheses and Numbers):</label>
-        <textarea id="tool4-input" rows="4" cols="50">masterpiece, best quality, 1girl, (aqua eyes), (baseball cap:1.2), ((blonde hair)), closed mouth, earrings, green background, hat, hoop earrings, jewelry, looking at viewer, shirt, short hair, simple background, solo, (upper body, yellow shirt)</textarea>
-        <button id="tool4-button">Convert</button>
-        <label for="tool4-output">Output Text (Without Parentheses and Numbers):</label>
-        <textarea id="tool4-output" rows="4" cols="50"></textarea>
-        <button class="copy-button" data-output="tool4-output">Copy to Clipboard</button>
+        <div class="tool-input-group full-width">
+            <label for="tool4-input">Input Text (With Parentheses and Numbers):</label>
+            <textarea id="tool4-input" rows="4" cols="50">masterpiece, best quality, 1girl, (aqua eyes), (baseball cap:1.2), ((blonde hair)), closed mouth, earrings, green background, hat, hoop earrings, jewelry, looking at viewer, shirt, short hair, simple background, solo, (upper body, yellow shirt)</textarea>
+            <button id="tool4-button">Convert</button>
+        </div>
+        <div class="tool-output-group full-width">
+            <label for="tool4-output">Output Text (Without Parentheses and Numbers):</label>
+            <textarea id="tool4-output" rows="4" cols="50"></textarea>
+            <button class="copy-button" data-output="tool4-output">Copy to Clipboard</button>
+        </div>
     </div>
 
     <script src="js/newlines2commas.js"></script>

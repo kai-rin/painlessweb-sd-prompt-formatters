@@ -50,10 +50,28 @@ pre {
     margin: 0;
 }
 
+.full-width textarea,
+.full-width button {
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .tool {
     padding: 2rem;  /* ツール内部の全体的なスペースを調整 */
     margin-left: 0;   /* 左マージンを0に設定 */
     padding-left: 0;  /* 左パディングを0に設定 */
+}
+
+.tool-input-group,
+.tool-output-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.tool-input-group button,
+.tool-output-group button {
+    margin-top: 0.5em;
 }
 
 .tab-button {
