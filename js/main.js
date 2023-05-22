@@ -17,11 +17,11 @@ tabs.forEach(tab => {
 });
 
 window.onload = function() {
-    document.getElementById('newlines2commas').style.display = 'block';
-    document.getElementById('newlines2commas-input').value = document.getElementById('newlines2commas-input').value.replace(/\\n/g, '\n');
+    document.getElementById('NL2commas').style.display = 'block';
+    document.getElementById('NL2commas-input').value = document.getElementById('NL2commas-input').value.replace(/\\n/g, '\n');
     document.getElementById('NL2DyPrompt-input').value = document.getElementById('NL2DyPrompt-input').value.replace(/\\n/g, '\n');
 
-    document.getElementById("newlines2commas-input").addEventListener("focus", function(){
+    document.getElementById("NL2commas-input").addEventListener("focus", function(){
         this.select();
     });
   
@@ -30,3 +30,18 @@ window.onload = function() {
     });
 };
 
+document.getElementById("NL2commas-clear").addEventListener("click", function(){
+    document.getElementById("NL2commas-input").value = '';
+});
+
+document.getElementById("commas2newlines-clear").addEventListener("click", function(){
+    document.getElementById("commas2newlines-input").value = '';
+});
+
+document.getElementById("NL2DyPrompt-clear").addEventListener("click", function(){
+    document.getElementById("NL2DyPrompt-input").value = '';
+});
+
+document.getElementById("CleanParenthesis-clear").addEventListener("click", function(){
+    document.getElementById("CleanParenthesis-input").value = '';
+});

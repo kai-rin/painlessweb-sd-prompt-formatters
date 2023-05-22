@@ -50,8 +50,7 @@ pre {
     margin: 0;
 }
 
-.full-width textarea,
-.full-width button {
+.full-width textarea{
     width: 100%;
     box-sizing: border-box;
 }
@@ -80,4 +79,18 @@ pre {
     text-align: center;  /* テキストを中央揃えにする */
     margin-left: 0;   /* 左マージンを0に設定 */
     padding-left: 0;  /* 左パディングを0に設定 */
+}
+
+.button-group {
+    display: flex;
+    width: 100%;
+}
+
+.button-clear {
+    width: 20%;
+    margin-right: 4px;   /* 左マージンを0に設定 */
+}
+
+.button-convert {
+    width: 80%;
 }
