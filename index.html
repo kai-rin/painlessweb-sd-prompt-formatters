@@ -9,13 +9,13 @@
     <div class="container">
         <div id="tabs">
         <button class="tab-button" data-tool="newlines2commas">newlines2commas</button>
-        <button class="tab-button" data-tool="tool2">Tool 2</button>
+        <button class="tab-button" data-tool="commas2newlines">commas2newlines</button>
         <button class="tab-button" data-tool="tool3">Tool 3</button>
         <button class="tab-button" data-tool="tool4">Tool 4</button>
     </div>
 
     <div id="newlines2commas" class="tool">
-        <h2>Tool 1: Convert Newlines to Commas</h2>
+        <h2>Convert Newlines to Commas</h2>
         <div class="tool-input-group full-width">
             <label for="newlines2commas-input">Input Text (Newlines):</label>
             <textarea id="newlines2commas-input" rows="4" cols="50">masterpiece\nbest quality\n1girl\naqua eyes\nbaseball cap\nblonde hair\nclosed mouth\nearrings\ngreen background\nhat\nhoop earrings\njewelry\nlooking at viewer\nshirt\nshort hair\nsimple background\nsolo\nupper body\nyellow shirt</textarea>
@@ -28,17 +28,17 @@
         </div>
     </div>
 
-    <div id="tool2" class="tool" style="display: none;">
-        <h2>Tool 2: Convert Commas to Newlines</h2>
+    <div id="commas2newlines" class="tool" style="display: none;">
+        <h2>Convert Commas to Newlines</h2>
         <div class="tool-input-group full-width">
-            <label for="tool2-input">Input Text (Commas):</label>
-            <textarea id="tool2-input" rows="4" cols="50">masterpiece, best quality, 1girl, aqua eyes, baseball cap, blonde hair, closed mouth, earrings, green background, hat, hoop earrings, jewelry, looking at viewer, shirt, short hair, simple background, solo, upper body, yellow shirt</textarea>
-            <button id="tool2-button">Convert</button>
+            <label for="commas2newlines-input">Input Text (Commas):</label>
+            <textarea id="commas2newlines-input" rows="4" cols="50">masterpiece, best quality, 1girl, aqua eyes, baseball cap, blonde hair, closed mouth, earrings, green background, hat, hoop earrings, jewelry, looking at viewer, shirt, short hair, simple background, solo, upper body, yellow shirt</textarea>
+            <button id="commas2newlines-button">Convert</button>
         </div>
         <div class="tool-output-group full-width">
-            <label for="tool2-output">Output Text (Newlines):</label>
-            <textarea id="tool2-output" rows="4" cols="50"></textarea>
-            <button class="copy-button" data-output="tool2-output">Copy to Clipboard</button>
+            <label for="commas2newlines-output">Output Text (Newlines):</label>
+            <textarea id="commas2newlines-output" rows="4" cols="50"></textarea>
+            <button class="copy-button" data-output="commas2newlines-output">Copy to Clipboard</button>
         </div>
     </div>
 
@@ -71,7 +71,7 @@
     </div>
 
     <script src="js/newlines2commas.js"></script>
-    <script src="js/tool2.js"></script>
+    <script src="js/commas2newlines.js"></script>
     <script src="js/tool3.js"></script>
     <script src="js/tool4.js"></script>
     <script src="js/main.js"></script>
