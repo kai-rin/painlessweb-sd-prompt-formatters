@@ -18,7 +18,7 @@ tabs.forEach(tab => {
 
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('newlines2commas-input').value = document.getElementById('newlines2commas-input').value.replace(/\\n/g, '\n');
-    document.getElementById('tool3-input').value = document.getElementById('tool3-input').value.replace(/\\n/g, '\n');
+    document.getElementById('NL2DyPrompt-input').value = document.getElementById('NL2DyPrompt-input').value.replace(/\\n/g, '\n');
 });
 
 window.onload = function() {
