@@ -3,3 +3,7 @@ document.getElementById("commas2newlines-button").addEventListener("click", func
     const output = input.split(/\s*,\s*/).join('\n');
     document.getElementById("commas2newlines-output").value = output;
 });
+
+document.getElementById("commas2newlines-input").addEventListener("focus", function(){
+    this.select();
+});

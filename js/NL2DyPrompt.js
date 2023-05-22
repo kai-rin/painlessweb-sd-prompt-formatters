@@ -3,3 +3,7 @@ document.getElementById("NL2DyPrompt-button").addEventListener("click", function
     const output = '{' + input.split('\n').join(' | ') + '}';
     document.getElementById("NL2DyPrompt-output").value = output;
 });
+
+document.getElementById("NL2DyPrompt-input").addEventListener("focus", function(){
+    this.select();
+});

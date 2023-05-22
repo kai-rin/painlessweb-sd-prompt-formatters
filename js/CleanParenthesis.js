@@ -20,3 +20,7 @@ document.getElementById("CleanParenthesis-button").addEventListener("click", fun
 
     document.getElementById("CleanParenthesis-output").value = outputText;
 });
+
+document.getElementById("CleanParenthesis-input").addEventListener("focus", function(){
+    this.select();
+});
