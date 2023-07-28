@@ -1,93 +1,89 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-    <title>SD Prompt Formatters</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SD Prompt Formatters</title>
+<link href="css/styles.css" rel="stylesheet"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 </head>
 <body>
-    <div class="container">
-        <div id="tabs">
-        <button class="tab-button" data-tool="NL2commas">NL2commas</button>
-        <button class="tab-button" data-tool="commas2NL">commas2NL</button>
-        <button class="tab-button" data-tool="NL2DyPrompt">NL2DyPrompt</button>
-        <button class="tab-button" data-tool="CleanParenthesis">CleanParenthesis</button>
-    </div>
-
-    <div id="NL2commas" class="tool">
-        <h2>Convert Newlines to Commas</h2>
-        <div class="tool-input-group full-width">
-            <label for="NL2commas-input">Input Text (Newlines):</label>
-            <textarea id="NL2commas-input" rows="4" cols="50">masterpiece\nbest quality\n1girl\naqua eyes\nbaseball cap\nblonde hair\nclosed mouth\nearrings\ngreen background\nhat\nhoop earrings\njewelry\nlooking at viewer\nshirt\nshort hair\nsimple background\nsolo\nupper body\nyellow shirt</textarea>
-            <div class="button-group">
-                <button id="NL2commas-clear" class="button-clear">Clear</button>
-                <button id="NL2commas-button" class="button-convert">Convert</button>
-            </div>
-        </div>
-        <div class="tool-output-group full-width">
-            <label for="NL2commas-output">Output Text (Commas):</label>
-            <textarea id="NL2commas-output" rows="4" cols="50"></textarea>
-            <button class="copy-button" data-output="NL2commas-output">Copy to Clipboard</button>
-        </div>
-    </div>
-
-    <div id="commas2NL" class="tool" style="display: none;">
-        <h2>Convert Commas to Newlines</h2>
-        <div class="tool-input-group full-width">
-            <label for="commas2NL-input">Input Text (Commas):</label>
-            <textarea id="commas2NL-input" rows="4" cols="50">masterpiece, best quality, 1girl, aqua eyes, baseball cap, blonde hair, closed mouth, earrings, green background, hat, hoop earrings, jewelry, looking at viewer, shirt, short hair, simple background, solo, upper body, yellow shirt</textarea>
-            <div class="button-group">
-                <button id="commas2NL-clear" class="button-clear">Clear</button>
-                <button id="commas2NL-button" class="button-convert">Convert</button>
-            </div>    
-        </div>
-        <div class="tool-output-group full-width">
-            <label for="commas2NL-output">Output Text (Newlines):</label>
-            <textarea id="commas2NL-output" rows="4" cols="50"></textarea>
-            <button class="copy-button" data-output="commas2NL-output">Copy to Clipboard</button>
-        </div>
-    </div>
-
-    <div id="NL2DyPrompt" class="tool" style="display: none;">
-        <h2>Convert Newlines to Curly Brackets and Pipes</h2>
-        <div class="tool-input-group full-width">
-            <label for="NL2DyPrompt-input">Input Text (Newlines):</label>
-            <textarea id="NL2DyPrompt-input" rows="4" cols="50">masterpiece\nbest quality\n1girl\naqua eyes\nbaseball cap\nblonde hair\nclosed mouth\nearrings\ngreen background\nhat\nhoop earrings\njewelry\nlooking at viewer\nshirt\nshort hair\nsimple background\nsolo\nupper body\nyellow shirt</textarea>
-            <div class="button-group">
-                <button id="NL2DyPrompt-clear" class="button-clear">Clear</button>
-                <button id="NL2DyPrompt-button" class="button-convert">Convert</button>
-            </div>
-        </div>
-        <div class="tool-output-group full-width">
-            <label for="NL2DyPrompt-output">Output Text (Curly Brackets and Pipes):</label>
-            <textarea id="NL2DyPrompt-output" rows="4" cols="50"></textarea>
-            <button class="copy-button" data-output="NL2DyPrompt-output">Copy to Clipboard</button>
-        </div>
-    </div>
-
-    <div id="CleanParenthesis" class="tool" style="display: none;">
-        <h2>Remove Parentheses and Inside Numbers</h2>
-        <div class="tool-input-group full-width">
-            <label for="CleanParenthesis-input">Input Text (With Parentheses and Numbers):</label>
-            <textarea id="CleanParenthesis-input" rows="4" cols="50">masterpiece, best quality, 1girl, (aqua eyes), (baseball cap:1.2), ((blonde hair)), closed mouth, earrings, green background, hat, hoop earrings, jewelry, looking at viewer, shirt, short hair, simple background, solo, (upper body, yellow shirt)</textarea>
-            <div class="button-group">
-                <button id="CleanParenthesis-clear" class="button-clear">Clear</button>
-                <button id="CleanParenthesis-button" class="button-convert">Convert</button>
-            </div>
-        </div>
-        <div class="tool-output-group full-width">
-            <label for="CleanParenthesis-output">Output Text (Without Parentheses and Numbers):</label>
-            <textarea id="CleanParenthesis-output" rows="4" cols="50"></textarea>
-            <button class="copy-button" data-output="CleanParenthesis-output">Copy to Clipboard</button>
-        </div>
-    </div>
-
-    <script src="js/NL2commas.js"></script>
-    <script src="js/commas2NL.js"></script>
-    <script src="js/NL2DyPrompt.js"></script>
-    <script src="js/CleanParenthesis.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/clipboard.js"></script>
-    </div>
-</body>
+<div class="container">
+<div id="tabs">
+<button class="tab-button" data-tool="NL2commas">NL2commas</button>
+<button class="tab-button" data-tool="commas2NL">commas2NL</button>
+<button class="tab-button" data-tool="NL2DyPrompt">NL2DyPrompt</button>
+<button class="tab-button" data-tool="CleanParenthesis">CleanParenthesis</button>
+</div>
+<div class="tool" id="NL2commas">
+<h2>Convert Newlines to Commas</h2>
+<div class="tool-input-group full-width">
+<label for="NL2commas-input">Input Text (Newlines):</label>
+<textarea cols="50" id="NL2commas-input" rows="4">masterpiece\nbest quality\n1girl\naqua eyes\nbaseball cap\nblonde hair\nclosed mouth\nearrings\ngreen background\nhat\nhoop earrings\njewelry\nlooking at viewer\nshirt\nshort hair\nsimple background\nsolo\nupper body\nyellow shirt</textarea>
+<div class="button-group">
+<button class="button-clear" id="NL2commas-clear">Clear</button>
+<button class="button-convert" id="NL2commas-button">Convert</button>
+</div>
+</div>
+<div class="tool-output-group full-width">
+<label for="NL2commas-output">Output Text (Commas):</label>
+<textarea cols="50" id="NL2commas-output" rows="4"></textarea>
+<button class="copy-button" data-output="NL2commas-output">Copy to Clipboard</button>
+</div>
+</div>
+<div class="tool" id="commas2NL" style="display: none;">
+<h2>Convert Commas to Newlines</h2>
+<div class="tool-input-group full-width">
+<label for="commas2NL-input">Input Text (Commas):</label>
+<textarea cols="50" id="commas2NL-input" rows="4">masterpiece, best quality, 1girl, aqua eyes, baseball cap, blonde hair, closed mouth, earrings, green background, hat, hoop earrings, jewelry, looking at viewer, shirt, short hair, simple background, solo, upper body, yellow shirt</textarea>
+<div class="button-group">
+<button class="button-clear" id="commas2NL-clear">Clear</button>
+<button class="button-convert" id="commas2NL-button">Convert</button>
+</div>
+</div>
+<div class="tool-output-group full-width">
+<label for="commas2NL-output">Output Text (Newlines):</label>
+<textarea cols="50" id="commas2NL-output" rows="4"></textarea>
+<button class="copy-button" data-output="commas2NL-output">Copy to Clipboard</button>
+</div>
+</div>
+<div class="tool" id="NL2DyPrompt" style="display: none;">
+<h2>Convert Newlines to Curly Brackets and Pipes</h2>
+<div class="tool-input-group full-width">
+<label for="NL2DyPrompt-input">Input Text (Newlines):</label>
+<textarea cols="50" id="NL2DyPrompt-input" rows="4">masterpiece\nbest quality\n1girl\naqua eyes\nbaseball cap\nblonde hair\nclosed mouth\nearrings\ngreen background\nhat\nhoop earrings\njewelry\nlooking at viewer\nshirt\nshort hair\nsimple background\nsolo\nupper body\nyellow shirt</textarea>
+<div class="button-group">
+<button class="button-clear" id="NL2DyPrompt-clear">Clear</button>
+<button class="button-convert" id="NL2DyPrompt-button">Convert</button>
+</div>
+</div>
+<div class="tool-output-group full-width">
+<label for="NL2DyPrompt-output">Output Text (Curly Brackets and Pipes):</label>
+<textarea cols="50" id="NL2DyPrompt-output" rows="4"></textarea>
+<button class="copy-button" data-output="NL2DyPrompt-output">Copy to Clipboard</button>
+</div>
+</div>
+<div class="tool" id="CleanParenthesis" style="display: none;">
+<h2>Remove Parentheses and Inside Numbers</h2>
+<div class="tool-input-group full-width">
+<label for="CleanParenthesis-input">Input Text (With Parentheses and Numbers):</label>
+<textarea cols="50" id="CleanParenthesis-input" rows="4">masterpiece, best quality, 1girl, (aqua eyes), (baseball cap:1.2), ((blonde hair)), closed mouth, earrings, green background, hat, hoop earrings, jewelry, looking at viewer, shirt, short hair, simple background, solo, (upper body, yellow shirt)</textarea>
+<div class="button-group">
+<button class="button-clear" id="CleanParenthesis-clear">Clear</button>
+<button class="button-convert" id="CleanParenthesis-button">Convert</button>
+</div>
+</div>
+<div class="tool-output-group full-width">
+<label for="CleanParenthesis-output">Output Text (Without Parentheses and Numbers):</label>
+<textarea cols="50" id="CleanParenthesis-output" rows="4"></textarea>
+<button class="copy-button" data-output="CleanParenthesis-output">Copy to Clipboard</button>
+</div>
+</div>
+<script src="js/NL2commas.js"></script>
+<script src="js/commas2NL.js"></script>
+<script src="js/NL2DyPrompt.js"></script>
+<script src="js/CleanParenthesis.js"></script>
+<script src="js/main.js"></script>
+<script src="js/clipboard.js"></script>
+</div>
+<footer>Made with animal spirits by <a href="https://github.com/kai-rin/painlessweb-sd-prompt-formatters">Kairin</a></footer></body>
 </html>

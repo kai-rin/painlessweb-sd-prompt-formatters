@@ -94,3 +94,14 @@ pre {
 .button-convert {
     width: 80%;
 }
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  background-color: #20232a;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #61dafb;
+}
